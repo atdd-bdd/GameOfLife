@@ -1,0 +1,16 @@
+Started with Gherkin scenarios.
+
+First to implement - the static.
+Then the blinker
+Then the toad
+Finally the glider
+
+Did the input and output routines.   Need to figure out how to capture a moving window.
+
+Needed to change List<Cell> to Set<Cell> so a little refactoring
+
+Last scenario - the Glider - could not capture the steps.   Will need to do so
+after getting the first working
+
+I get some failures - I need to figure out about minX, maxX, minY, and maxY
+    should these be set on input?

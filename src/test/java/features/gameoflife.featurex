@@ -1,0 +1,124 @@
+Feature: Game of Life 
+
+
+Scenario: Output and Conversion work
+Given generation is
+|  | X |  |
+|  | X |  |
+|  | X |  |
+When output
+Then generation is now
+|  | X |  |
+|  | X |  |
+|  | X |  |
+
+Scenario: Block
+Given generation is
+|  |   |   |  |
+|  | X | X |  |
+|  | X | X |  |
+|  |   |   |  |
+When tick 
+Then generation is now
+|  |   |   |  |
+|  | X | X |  |
+|  | X | X |  |
+|  |   |   |  |
+
+Scenario: Blinker
+Given generation is
+|  | X |  |
+|  | X |  |
+|  | X |  |
+When tick 
+Then generation is now
+|   |   |   |
+| X | X | X |
+|   |   |   |
+When tick
+Then generation is now 
+|  | X |  |
+|  | X |  |
+|  | X |  |
+
+Scenario: Toad 
+Given generation is
+|  |   |   |   |   |  |
+|  |   |   |   |   |  |
+|  |   | X | X | X |  |
+|  | X | X | X |   |  |
+|  |   |   |   |   |  |
+|  |   |   |   |   |  |
+When tick 
+Then generation is now
+|  |   |   |   |   |  |
+|  |   |   | X |   |  |
+|  | X |   |   | X |  |
+|  | X |   |   | X |  |
+|  |   | X |   |   |  |
+|  |   |   |   |   |  |
+When tick
+Then generation is now
+|  |   |   |   |   |  |
+|  |   |   |   |   |  |
+|  |   | X | X | X |  |
+|  | X | X | X |   |  |
+|  |   |   |   |   |  |
+|  |   |   |   |   |  |
+
+Scenario: Glider 
+
+# 0
+Given generation is         
+|   | X |   |  |  |
+|   |   | X |  |  |
+| X | X | X |  |  |
+|   |   |   |  |  |
+|   |   |   |  |  |
+|   |   |   |  |  |
+When tick 
+# 1
+Then generation is now
+|   |   |   |  |  |
+| X |   | X |  |  |
+|   | X | X |  |  |
+|   | X |   |  |  |
+|   |   |   |  |  |
+|   |   |   |  |  |
+When tick
+#2 
+Then generation is now
+|   |   |   |  |  |
+|   |   | X |  |  |
+| X |   | X |  |  |
+|   | X | X |  |  |
+|   |   |   |  |  |
+|   |   |   |  |  |
+When tick 
+#3
+Then generation is now
+|  |   |   |   |  |
+|  | X |   |   |  |
+|  |   | X | X |  |
+|  | X | X |   |  |
+|  |   |   |   |  |
+|  |   |   |   |  |
+When tick 
+#4
+Then generation is now
+|  |   |   |   |  |
+|  |   | X |   |  |
+|  |   |   | X |  |
+|  | X | X | X |  |
+|  |   |   |   |  |
+|  |   |   |   |  |
+
+Scenario:  Examples for main program
+# Transposed Glider 
+Given generation is         
+|  |  |   |   |   |  |
+|  |  | X | X | X |  |
+|  |  | X |   |   |  |
+|  |  |   | X |   |  |
+|  |  |   |   |   |  |
+|  |  |   |   |   |  |

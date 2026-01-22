@@ -1,0 +1,110 @@
+Feature: Game of Life
+Scenario: Output and Conversion work
+Given generation is
+|  | X |  |
+|  | X |  |
+|  | X |  |
+When output
+Then generation is now
+|  | X |  |
+|  | X |  |
+|  | X |  |
+Scenario: Block
+Given generation is
+|  |   |   |  |
+|  | X | X |  |
+|  | X | X |  |
+|  |   |   |  |
+When tick
+Then generation is now
+|  |   |   |  |
+|  | X | X |  |
+|  | X | X |  |
+|  |   |   |  |
+Scenario: Blinker
+Given generation is
+|  | X |  |
+|  | X |  |
+|  | X |  |
+When tick
+Then generation is now
+|   |   |   |
+| X | X | X |
+|   |   |   |
+When tick
+Then generation is now
+|  | X |  |
+|  | X |  |
+|  | X |  |
+Scenario: Toad
+Given generation is
+|  |   |   |   |   |  |
+|  |   |   |   |   |  |
+|  |   | X | X | X |  |
+|  | X | X | X |   |  |
+|  |   |   |   |   |  |
+|  |   |   |   |   |  |
+When tick
+Then generation is now
+|  |   |   |   |   |  |
+|  |   |   | X |   |  |
+|  | X |   |   | X |  |
+|  | X |   |   | X |  |
+|  |   | X |   |   |  |
+|  |   |   |   |   |  |
+When tick
+Then generation is now
+|  |   |   |   |   |  |
+|  |   |   |   |   |  |
+|  |   | X | X | X |  |
+|  | X | X | X |   |  |
+|  |   |   |   |   |  |
+|  |   |   |   |   |  |
+Scenario: Glider
+Given generation is
+|   | X |   |  |  |
+|   |   | X |  |  |
+| X | X | X |  |  |
+|   |   |   |  |  |
+|   |   |   |  |  |
+|   |   |   |  |  |
+When tick
+Then generation is now
+|   |   |   |  |  |
+| X |   | X |  |  |
+|   | X | X |  |  |
+|   | X |   |  |  |
+|   |   |   |  |  |
+|   |   |   |  |  |
+When tick
+Then generation is now
+|   |   |   |  |  |
+|   |   | X |  |  |
+| X |   | X |  |  |
+|   | X | X |  |  |
+|   |   |   |  |  |
+|   |   |   |  |  |
+When tick
+Then generation is now
+|  |   |   |   |  |
+|  | X |   |   |  |
+|  |   | X | X |  |
+|  | X | X |   |  |
+|  |   |   |   |  |
+|  |   |   |   |  |
+When tick
+Then generation is now
+|  |   |   |   |  |
+|  |   | X |   |  |
+|  |   |   | X |  |
+|  | X | X | X |  |
+|  |   |   |   |  |
+|  |   |   |   |  |
+Scenario:  Examples for main program
+Given generation is
+|  |  |   |   |   |  |
+|  |  | X | X | X |  |
+|  |  | X |   |   |  |
+|  |  |   | X |   |  |
+|  |  |   |   |   |  |
+|  |  |   |   |   |  |
