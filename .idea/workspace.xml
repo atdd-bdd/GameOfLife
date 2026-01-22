@@ -5,25 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d6343bd7-f508-43be-9b48-39f7685deead" name="Changes" comment="Initial commit with tests and main program">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notes.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/GameOfLife/Cell.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/GameOfLife/Game.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/GameOfLife/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/GameOfLife/Size.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/GameOfLife/Utility.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/features/gameoflife.featurex" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/gherkinexecutor/Feature_Game_of_Life/Feature_Game_Of_Life_glue.tmpl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/gherkinexecutor/Feature_Game_of_Life/Feature_Game_of_Life.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/gherkinexecutor/Feature_Game_of_Life/Feature_Game_of_Life_glue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/gherkinexecutor/Feature_Game_of_Life/feature.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/gherkinexecutor/Translate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
